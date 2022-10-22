@@ -7,7 +7,9 @@
 
 
     <application>
-        <receiver android:name=".PhonePlusPlugin">
+        <receiver android:name=".PhonePlusPlugin"
+                  android:exported="true"
+                  >
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
